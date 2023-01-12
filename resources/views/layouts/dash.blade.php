@@ -104,7 +104,7 @@
           </div>
           <ul class="navbar-nav navbar-nav-icons flex-row">
             <li class="nav-item dropdown">
-            <button class="btn btn-secondary me-1 mb-1" type="button">Connect wallet</button>
+            <button @click="checkWalletConnected" class="py-2 px-8 rounded button-custom flex">Connect Wallet</button>
             </li>
           </ul>
         </div>
@@ -236,6 +236,7 @@
         </footer>
       </div>
       </div>
+
       <script>
         var navbarTopShape = localStorage.getItem('phoenixNavbarTopShape');
         var navbarPosition = localStorage.getItem('phoenixNavbarPosition');
@@ -307,7 +308,7 @@
     <script src="../vendors/echarts/echarts.min.js"></script>
     <script src="../vendors/dhtmlx-gantt/dhtmlxgantt.js"></script>
     <script src="../assets/js/phoenix.js"></script>
-    
+    <script src="{{ mix('/js/app.js') }}"></script>
   </body>
 
 </html>

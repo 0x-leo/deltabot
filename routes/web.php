@@ -23,6 +23,10 @@ Route::get('/console/deployment', function () {
     return view('deployment');
 });
 
+Route::get('/console/pricing', function () {
+    return view('pricing');
+});
+
 Auth::routes();
 
 Route::get('/console', [App\Http\Controllers\ConsoleController::class, 'index'])->name('console');
